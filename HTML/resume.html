@@ -3,143 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dipesh Yadav — Resume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Resume — Dipesh Yadav</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../CSS/index.css">
+  <style>
+    .resume-page { background: var(--dark); min-height: 100vh; padding: 60px 0; }
+    .resume-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 40px;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .resume-tag {
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 24px;
+    }
+    .resume-name { font-size: 2.2rem; font-weight: 800; color: var(--white); margin-bottom: 10px; }
+    .resume-bio  { color: var(--text-muted); line-height: 1.8; margin-bottom: 24px; }
+    .resume-row  { display: flex; gap: 10px; margin-bottom: 10px; }
+    .resume-label { color: var(--white); font-weight: 700; min-width: 90px; }
+    .resume-value { color: var(--text-muted); }
+    .resume-value a { color: var(--accent); text-decoration: none; }
+    .skill-pill {
+      background: var(--dark);
+      border: 1px solid var(--primary);
+      color: var(--accent);
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      display: inline-block;
+      margin: 4px;
+    }
+    .section-divider { border-color: var(--border); margin: 28px 0; }
+    .edu-title { color: var(--white); font-weight: 700; margin-bottom: 2px; }
+    .edu-sub   { color: var(--text-muted); font-size: 0.88rem; }
+  </style>
 </head>
 <body>
-
-<div class="topbar">
-  <a href="../index.html" class="home-link">🏠 Home</a>
-  <a href="../HTML/Portfolio.html">Portfolio</a>
-  <a href="#" class="topbar-current">Resume</a>
-  <button class="print-btn" onclick="window.print()">🖨️ Print / Save PDF</button>
-</div>
-
-<div class="page">
-
-  <!-- HEADER -->
-  <div class="resume-header">
-    <div class="header-name">Dipesh Yadav</div>
-    <div class="header-role">Full Stack Development Student &nbsp;·&nbsp; CET138</div>
-    <div class="header-contacts">
-      <div class="contact-chip"><span class="icon">📧</span> dipesh@email.com</div>
-      <div class="contact-chip"><span class="icon">🔗</span> ../HTML/Portfolio.html</div>
-      <div class="contact-chip"><span class="icon">📍</span> Nepal</div>
-      <div class="contact-chip"><span class="icon">💼</span> github.com/dipesh</div>
-    </div>
-  </div>
-
-  <div class="resume-body">
-
-    <!-- PROFILE -->
-    <div class="section">
-      <div class="section-title">Profile</div>
-      <p class="profile-text">
-        Motivated Full Stack Development student studying on the CET138 module. Skilled in building structured, styled, and interactive web pages using HTML, CSS, Bootstrap, and JavaScript. Understands how frontend technologies connect to backend systems and able to explain and demonstrate each layer of the full stack with working code examples.
-      </p>
-    </div>
-
-    <!-- TECHNICAL SKILLS -->
-    <div class="section">
-      <div class="section-title">Technical Skills</div>
-      <table class="skills-table">
-        <tr>
-          <td class="skill-label">HTML5</td>
-          <td class="skill-desc">Semantic structure, headings, paragraphs, lists, forms, links, images, accessibility (alt text)</td>
-        </tr>
-        <tr>
-          <td class="skill-label">CSS3</td>
-          <td class="skill-desc">Selectors, box model, Flexbox layout, colours, typography, external stylesheets, responsive design</td>
-        </tr>
-        <tr>
-          <td class="skill-label">Bootstrap 5</td>
-          <td class="skill-desc">12-column grid, CDN setup, navbar, cards, buttons, responsive breakpoints, utility classes</td>
-        </tr>
-        <tr>
-          <td class="skill-label">JavaScript</td>
-          <td class="skill-desc">Variables, functions, DOM manipulation, event listeners, querySelector, textContent, style updates</td>
-        </tr>
-        <tr>
-          <td class="skill-label">Full Stack</td>
-          <td class="skill-desc">Client-server model, HTTP request cycle, frontend/backend separation, Node.js &amp; MongoDB concepts</td>
-        </tr>
-      </table>
-    </div>
-
-    <!-- EDUCATION -->
-    <div class="section">
-      <div class="section-title">Education</div>
-      <div class="entry">
-        <div class="entry-header">
-          <div class="entry-title">CET138 — Full Stack Development</div>
-          <div class="entry-date">2024 – Present</div>
-        </div>
-        <div class="entry-sub">Higher Education — Computing &amp; IT &nbsp;·&nbsp; Nepal</div>
-        <p class="profile-text">Module covering the core technologies of modern web development — HTML, CSS, Bootstrap, JavaScript — and how they connect in a full stack architecture. Assessment delivered as a working ePortfolio website with live code demonstrations.</p>
-      </div>
-    </div>
-
-    <!-- PORTFOLIO PROJECT -->
-    <div class="section">
-      <div class="section-title">Portfolio Project</div>
-      <div class="entry">
-        <div class="entry-header">
-          <div class="entry-title">CET138 ePortfolio Website</div>
-          <div class="entry-date">2025</div>
-        </div>
-        <div class="entry-sub">Personal Academic Project &nbsp;·&nbsp; HTML / CSS / Bootstrap / JavaScript</div>
-        <ul class="entry-bullets">
-          <li>Built a multi-page responsive portfolio website to demonstrate knowledge of each full stack web technology</li>
-          <li>Designed a home page (index.html) and detailed portfolio page with five interactive sections and live demos</li>
-          <li>Implemented a live JavaScript quiz with DOM manipulation — feedback appears instantly without page reload</li>
-          <li>Built a working Bootstrap restaurant demo ("The Good Plate") using only Bootstrap class names — no custom CSS</li>
-          <li>Applied CSS Flexbox and the box model to style a personal profile page with a circular photo and button links</li>
-          <li>Used semantic HTML5 elements throughout with proper alt text, heading hierarchy, and accessible structure</li>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Dipesh Yadav <span class="brand-badge">CET138</span></a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="../index.html">🏠 Home</a></li>
+          <li class="nav-item"><a class="nav-link active-nav" href="Portfolio.html">Portfolio</a></li>
         </ul>
       </div>
     </div>
+  </nav>
 
-    <!-- KEY COMPETENCIES -->
-    <div class="section">
-      <div class="section-title">Key Competencies</div>
-      <div class="comp-grid">
-        <div class="comp-item"><span class="comp-dot"></span>Responsive web design principles</div>
-        <div class="comp-item"><span class="comp-dot"></span>Clean, readable code structure</div>
-        <div class="comp-item"><span class="comp-dot"></span>Frontend–backend separation</div>
-        <div class="comp-item"><span class="comp-dot"></span>Problem-solving and self-directed learning</div>
-        <div class="comp-item"><span class="comp-dot"></span>Debugging with browser developer tools</div>
-        <div class="comp-item"><span class="comp-dot"></span>Communicating technical concepts clearly</div>
+  <div class="resume-page">
+    <div class="container">
+      <div class="resume-card">
+        <div class="resume-tag">RESUME</div>
+
+        <div class="resume-name">Dipesh Yadav</div>
+        <p class="resume-bio">A motivated CET138 Full Stack Development student focused on building modern web applications. Experienced in HTML, CSS, Bootstrap, and JavaScript. This resume highlights my skills, education, and the ePortfolio project built for the CET138 module.</p>
+
+        <div class="resume-row"><span class="resume-label">Email:</span><span class="resume-value"><a href="mailto:dipeshyadav@gmail.com">dipeshyadav@gmail.com</a></span></div>
+        <div class="resume-row"><span class="resume-label">GitHub:</span><span class="resume-value"><a href="https://github.com/dipesh0067" target="_blank">github.com/dipesh0067</a></span></div>
+        <div class="resume-row"><span class="resume-label">Location:</span><span class="resume-value">Butwal, Nepal</span></div>
+        <div class="resume-row"><span class="resume-label">Portfolio:</span><span class="resume-value"><a href="Portfolio.html">Visit website</a></span></div>
+
+        <div style="margin-top:16px;">
+          <span class="skill-pill">HTML5</span>
+          <span class="skill-pill">CSS3</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">Bootstrap 5</span>
+          <span class="skill-pill">Git & GitHub</span>
+          <span class="skill-pill">Responsive Design</span>
+        </div>
+
+        <hr class="section-divider">
+
+        <h5 style="color:var(--accent); margin-bottom:16px;">Education</h5>
+        <div class="edu-title">BSc (Hons) Computer Systems Engineering</div>
+        <div class="edu-sub">University of Sunderland — via ISMT College Butwal, Nepal</div>
+        <div class="edu-sub" style="margin-top:4px;">Module: CET138 Full Stack Development</div>
+
+        <hr class="section-divider">
+
+        <h5 style="color:var(--accent); margin-bottom:16px;">Project — CET138 ePortfolio</h5>
+        <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.8;">Built a multi-page ePortfolio website demonstrating full stack knowledge. The site covers HTML structure, CSS styling with custom variables and Flexbox, Bootstrap responsive grid and components, and JavaScript DOM manipulation with live interactive demos. Deployed via GitHub Pages.</p>
+        <a href="Portfolio.html" class="btn-green d-inline-block mt-2">View Portfolio →</a>
       </div>
     </div>
-
-    <!-- TECHNOLOGIES -->
-    <div class="section">
-      <div class="section-title">Technologies</div>
-      <div class="tags">
-        <span class="tag">HTML5</span>
-        <span class="tag">CSS3</span>
-        <span class="tag">Bootstrap 5</span>
-        <span class="tag">JavaScript ES6</span>
-        <span class="tag">Flexbox</span>
-        <span class="tag">DOM API</span>
-        <span class="tag">Node.js (intro)</span>
-        <span class="tag">MongoDB (concepts)</span>
-        <span class="tag">Git</span>
-        <span class="tag">VS Code</span>
-        <span class="tag">Browser Dev Tools</span>
-        <span class="tag">CDN / APIs</span>
-      </div>
-    </div>
-
-  </div><!-- /resume-body -->
-
-  <div class="resume-footer">
-    Full ePortfolio available at ../HTML/Portfolio.html &nbsp;·&nbsp; CET138 Module Assessment &nbsp;·&nbsp; Dipesh Yadav
   </div>
 
-</div><!-- /page -->
-
-<script src="../JS/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

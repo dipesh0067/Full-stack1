@@ -3,464 +3,539 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CET138 ePortfolio – Full Stack Development</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>CET138 ePortfolio – Dipesh Yadav</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../CSS/index.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg">
-  <div class="container">
-    <a class="navbar-brand" href="../index.html">
-      Dipesh Yadav <span class="brand-badge">CET138</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto gap-1">
-        <li class="nav-item"><a class="nav-link" href="../index.html">🏠 Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#fullstack">Full Stack</a></li>
-        <li class="nav-item"><a class="nav-link" href="#html">HTML</a></li>
-        <li class="nav-item"><a class="nav-link" href="#bootstrap">Bootstrap</a></li>
-        <li class="nav-item"><a class="nav-link" href="#javascript">JavaScript</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="hero">
-  <div class="hero-grid"></div>
-  <div class="hero-glow1"></div>
-  <div class="hero-glow2"></div>
-  <div class="container">
-    <div class="row align-items-center g-5">
-      <div class="col-lg-6 hero-content">
-        <div class="hero-eyebrow">CET138 Full Stack Development</div>
-        <h1>Building the<br>Web <span class="grad">from Scratch</span></h1>
-        <p class="hero-desc">An ePortfolio demonstrating my understanding of full stack web technologies — from HTML structure to JavaScript interactivity, all working together.</p>
-        <div class="hero-btns">
-          <a href="#fullstack" class="btn-primary-hero">Explore Portfolio</a>
-          <a href="#javascript" class="btn-ghost-hero">See Live Demo →</a>
-        </div>
-        <div class="hero-stats">
-          <div>
-            <div class="hero-stat-num">5<span>+</span></div>
-            <div class="hero-stat-label">Technologies</div>
-          </div>
-          <div>
-            <div class="hero-stat-num">3<span>+</span></div>
-            <div class="hero-stat-label">Live Demos</div>
-          </div>
-          <div>
-            <div class="hero-stat-num">1<span>x</span></div>
-            <div class="hero-stat-label">Full Portfolio</div>
-          </div>
-        </div>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Dipesh Yadav <span class="brand-badge">CET138</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="../index.html">🏠 Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#html">HTML</a></li>
+          <li class="nav-item"><a class="nav-link" href="#css">CSS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bootstrap">Bootstrap</a></li>
+          <li class="nav-item"><a class="nav-link" href="#javascript">JavaScript</a></li>
+          <li class="nav-item"><a class="nav-link active-nav" href="#fullstack">Full Stack</a></li>
+        </ul>
       </div>
-      <div class="col-lg-6">
-        <div class="hero-visual">
-          <div class="tech-row">
-            <div class="tech-pill">
-              <div class="tech-pill-icon">📄</div>
-              <div>
-                <div class="tech-pill-name">HTML5</div>
-                <div class="tech-pill-desc">Structure &amp; Content</div>
-              </div>
-            </div>
-            <div class="tech-pill">
-              <div class="tech-pill-icon">⚡</div>
-              <div>
-                <div class="tech-pill-name">Bootstrap 5</div>
-                <div class="tech-pill-desc">Responsive Framework</div>
-              </div>
-            </div>
-          </div>
-          <div class="tech-row">
-            <div class="tech-pill">
-              <div class="tech-pill-icon">🔧</div>
-              <div>
-                <div class="tech-pill-name">JavaScript</div>
-                <div class="tech-pill-desc">Interactivity &amp; Logic</div>
-              </div>
-            </div>
-            <div class="tech-pill">
-              <div class="tech-pill-icon">🌐</div>
-              <div>
-                <div class="tech-pill-name">Full Stack</div>
-                <div class="tech-pill-desc">End-to-End Dev</div>
-              </div>
-            </div>
-          </div>
+    </div>
+  </nav>
+
+  <!-- PORTFOLIO BANNER — FULL SCREEN -->
+  <div class="portfolio-banner">
+    <div class="container">
+      <div class="pb-inner fade-up">
+        <div class="hero-badge">◆ CET138 — ePORTFOLIO</div>
+        <h1 class="pb-title">Building the Web <span>From Scratch</span></h1>
+        <p class="pb-sub">HTML · CSS · Bootstrap · JavaScript · Full Stack — all explained and demonstrated live below.</p>
+        <div class="pb-nav-pills">
+          <a href="#html"       class="pb-pill">📄 HTML</a>
+          <a href="#css"        class="pb-pill">🎨 CSS</a>
+          <a href="#bootstrap"  class="pb-pill">⚡ Bootstrap</a>
+          <a href="#javascript" class="pb-pill">🔧 JavaScript</a>
+          <a href="#fullstack"  class="pb-pill">🌐 Full Stack</a>
         </div>
       </div>
     </div>
   </div>
-</section>
 
-<!-- SECTION 01 — FULL STACK -->
-<section class="section" id="fullstack">
-  <div class="container">
-    <div class="row g-5">
-      <div class="col-lg-5 fade-up">
-        <div class="section-eyebrow">Section 01 — Overview</div>
-        <h2 class="section-title">What is Full Stack Development?</h2>
-        <p class="section-desc">Full stack development covers every layer of a web application — the visual interface users see, the server logic that processes data, and the database that stores it permanently.</p>
-        <div class="concept-row">
-          <div class="concept-badge"><span class="dot dot-blue"></span>Frontend</div>
-          <div class="concept-badge"><span class="dot dot-cyan"></span>Backend</div>
-          <div class="concept-badge"><span class="dot dot-purple"></span>Database</div>
-          <div class="concept-badge"><span class="dot dot-green"></span>APIs</div>
-          <div class="concept-badge"><span class="dot dot-amber"></span>DevOps</div>
+  <!-- ===== SECTION 01 — HTML ===== -->
+  <section id="html">
+    <div class="container">
+      <div class="section-label">Section 01 — Markup</div>
+      <h2 class="section-title">HTML – Structure of Every Page</h2>
+      <p class="section-sub mb-5">HTML (HyperText Markup Language) is the skeleton of every webpage. It uses tags to label content so the browser knows what each piece is and how to display it.</p>
+
+      <div class="row g-4 mb-5">
+        <div class="col-md-3 col-6 fade-up">
+          <div class="card-custom text-center">
+            <span class="card-icon">📄</span>
+            <h5>&lt;h1&gt;–&lt;h6&gt;</h5>
+            <p>Heading hierarchy for page structure and SEO</p>
+          </div>
         </div>
-      </div>
-      <div class="col-lg-7 fade-up">
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="feat-card">
-              <div class="feat-icon blue">🖥️</div>
-              <h5>Frontend</h5>
-              <p>What users see and touch. Built with HTML, CSS, JavaScript and Bootstrap.</p>
-            </div>
+        <div class="col-md-3 col-6 fade-up">
+          <div class="card-custom text-center">
+            <span class="card-icon">🔗</span>
+            <h5>&lt;a&gt;</h5>
+            <p>Anchor links — connects pages together across the web</p>
           </div>
-          <div class="col-md-4">
-            <div class="feat-card">
-              <div class="feat-icon cyan">⚙️</div>
-              <h5>Backend</h5>
-              <p>Server-side logic. Handles requests, authentication, and business rules.</p>
-            </div>
+        </div>
+        <div class="col-md-3 col-6 fade-up">
+          <div class="card-custom text-center">
+            <span class="card-icon">📝</span>
+            <h5>&lt;form&gt;</h5>
+            <p>Collects user input and sends data to the backend</p>
           </div>
-          <div class="col-md-4">
-            <div class="feat-card">
-              <div class="feat-icon purple">🗄️</div>
-              <h5>Database</h5>
-              <p>Stores all data permanently. MySQL for structured, MongoDB for flexible.</p>
-            </div>
+        </div>
+        <div class="col-md-3 col-6 fade-up">
+          <div class="card-custom text-center">
+            <span class="card-icon">🖼️</span>
+            <h5>&lt;img&gt;</h5>
+            <p>Embeds images with alt text for accessibility</p>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="row g-5 align-items-start mt-4">
-      <div class="col-lg-5 fade-up">
-        <h4 class="flow-heading">How a Food Order Works</h4>
-        <p class="flow-intro">When a customer places an order on a delivery app, the request travels through every layer of the full stack in under two seconds. Here is exactly what happens at each step.</p>
-      </div>
-      <div class="col-lg-7 fade-up">
-        <div class="flow-wrap">
-          <div class="flow-node">
-            <div class="flow-node-num">1</div>
-            <div class="flow-node-text">
-              <h6>Customer Taps "Place Order"</h6>
-              <p>JavaScript captures the click event in the browser — no page reload</p>
-            </div>
-          </div>
-          <div class="flow-connector"></div>
-          <div class="flow-node">
-            <div class="flow-node-num">2</div>
-            <div class="flow-node-text">
-              <h6>Frontend Sends the Request</h6>
-              <p>Cart data is packaged as JSON and sent via HTTP POST to the backend API</p>
-            </div>
-          </div>
-          <div class="flow-connector"></div>
-          <div class="flow-node">
-            <div class="flow-node-num">3</div>
-            <div class="flow-node-text">
-              <h6>Backend Processes Everything</h6>
-              <p>Validates input, checks authentication, processes payment via Stripe</p>
-            </div>
-          </div>
-          <div class="flow-connector"></div>
-          <div class="flow-node">
-            <div class="flow-node-num">4</div>
-            <div class="flow-node-text">
-              <h6>Database Saves the Order</h6>
-              <p>New order record written with ID, items, price, address, and status</p>
-            </div>
-          </div>
-          <div class="flow-connector flow-connector-green"></div>
-          <div class="flow-node flow-node-success">
-            <div class="flow-node-num success">✓</div>
-            <div class="flow-node-text">
-              <h6>Confirmation Shown to Customer</h6>
-              <p>Success response sent back — frontend updates the page instantly</p>
-            </div>
-          </div>
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-5 fade-up">
+          <div class="code-label">index.html</div>
+          <div class="code-box">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;My ePortfolio&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;h1&gt;Dipesh Yadav&lt;/h1&gt;
+  &lt;p&gt;CET138 student.&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;HTML &amp; CSS&lt;/li&gt;
+    &lt;li&gt;Bootstrap&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;img src="photo.jpg" alt="Profile"&gt;
+
+  &lt;form&gt;
+    &lt;input type="text" placeholder="Name"&gt;
+    &lt;button type="submit"&gt;Send&lt;/button&gt;
+  &lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- SECTION 02 — HTML -->
-<section class="section section-alt" id="html">
-  <div class="container">
-    <div class="row g-5 align-items-start">
-      <div class="col-lg-5 fade-up">
-        <div class="section-eyebrow">Section 02 — Markup</div>
-        <h2 class="section-title">HTML – Structure of Every Page</h2>
-        <p class="section-desc">HTML (HyperText Markup Language) is the skeleton of every webpage. It uses tags to label content so the browser knows what each piece is and how to display it.</p>
-        <div class="row g-3">
-          <div class="col-6">
-            <div class="feat-card feat-card-sm">
-              <div class="feat-icon feat-icon-sm cyan">📌</div>
-              <h5>&lt;h1&gt;–&lt;h6&gt;</h5>
-              <p>Heading hierarchy for page structure</p>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="feat-card feat-card-sm">
-              <div class="feat-icon feat-icon-sm blue">🔗</div>
-              <h5>&lt;a&gt;</h5>
-              <p>Anchor links — connects pages together</p>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="feat-card feat-card-sm">
-              <div class="feat-icon feat-icon-sm purple">📝</div>
-              <h5>&lt;form&gt;</h5>
-              <p>Collects user input for the backend</p>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="feat-card feat-card-sm">
-              <div class="feat-icon feat-icon-sm green">🖼️</div>
-              <h5>&lt;img&gt;</h5>
-              <p>Embeds images with alt text for accessibility</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-7 fade-up">
-        <div class="code-wrap">
-          <div class="code-header">
-            <div class="code-dots2"><span></span><span></span><span></span></div>
-            <span class="code-filename">index.html</span>
-          </div>
-          <div class="code-body">
-<pre><span class="cm2">&lt;!-- Standard HTML5 document structure --&gt;</span>
-<span class="tag2">&lt;!DOCTYPE html&gt;</span>
-<span class="tag2">&lt;html</span> <span class="attr2">lang=</span><span class="str">"en"</span><span class="tag2">&gt;</span>
-<span class="tag2">&lt;head&gt;</span>
-  <span class="tag2">&lt;meta</span> <span class="attr2">charset=</span><span class="str">"UTF-8"</span><span class="tag2">&gt;</span>
-  <span class="tag2">&lt;title&gt;</span>My ePortfolio<span class="tag2">&lt;/title&gt;</span>
-<span class="tag2">&lt;/head&gt;</span>
-<span class="tag2">&lt;body&gt;</span>
-
-  <span class="tag2">&lt;h1&gt;</span>Welcome to My Portfolio<span class="tag2">&lt;/h1&gt;</span>
-  <span class="tag2">&lt;p&gt;</span>CET138 Full Stack Development student.<span class="tag2">&lt;/p&gt;</span>
-
-  <span class="cm2">&lt;!-- Unordered list of skills --&gt;</span>
-  <span class="tag2">&lt;ul&gt;</span>
-    <span class="tag2">&lt;li&gt;</span>HTML &amp; CSS<span class="tag2">&lt;/li&gt;</span>
-    <span class="tag2">&lt;li&gt;</span>Bootstrap Framework<span class="tag2">&lt;/li&gt;</span>
-    <span class="tag2">&lt;li&gt;</span>JavaScript<span class="tag2">&lt;/li&gt;</span>
-  <span class="tag2">&lt;/ul&gt;</span>
-
-  <span class="cm2">&lt;!-- Image with alt text for accessibility --&gt;</span>
-  <span class="tag2">&lt;img</span> <span class="attr2">src=</span><span class="str">"profile.jpg"</span>
-       <span class="attr2">alt=</span><span class="str">"Profile photo"</span><span class="tag2">&gt;</span>
-
-  <span class="cm2">&lt;!-- Contact form --&gt;</span>
-  <span class="tag2">&lt;form&gt;</span>
-    <span class="tag2">&lt;input</span> <span class="attr2">type=</span><span class="str">"text"</span>
-           <span class="attr2">placeholder=</span><span class="str">"Your name"</span><span class="tag2">&gt;</span>
-    <span class="tag2">&lt;button&gt;</span>Send Message<span class="tag2">&lt;/button&gt;</span>
-  <span class="tag2">&lt;/form&gt;</span>
-
-<span class="tag2">&lt;/body&gt;</span>
-<span class="tag2">&lt;/html&gt;</span></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 03 — BOOTSTRAP -->
-<section class="section section-alt" id="bootstrap">
-  <div class="container">
-    <div class="row g-5 align-items-start">
-      <div class="col-lg-5 fade-up">
-        <div class="section-eyebrow">Section 03 — Framework</div>
-        <h2 class="section-title">Bootstrap – Build Faster</h2>
-        <p class="section-desc">Bootstrap is a free CSS framework that provides a 12-column responsive grid and ready-made components — navbar, cards, buttons — all with a single CDN link.</p>
-        <div class="code-wrap">
-          <div class="code-header">
-            <div class="code-dots2"><span></span><span></span><span></span></div>
-            <span class="code-filename">index.html — Bootstrap grid</span>
-          </div>
-          <div class="code-body">
-<pre><span class="cm2">&lt;!-- Add via CDN --&gt;</span>
-<span class="tag2">&lt;link</span> <span class="attr2">href=</span><span class="str">"bootstrap.min.css"</span><span class="tag2">&gt;</span>
-
-<span class="cm2">&lt;!-- Responsive 3-column grid --&gt;</span>
-<span class="tag2">&lt;div</span> <span class="attr2">class=</span><span class="str">"container"</span><span class="tag2">&gt;</span>
- <span class="tag2">&lt;div</span> <span class="attr2">class=</span><span class="str">"row"</span><span class="tag2">&gt;</span>
-
-  <span class="tag2">&lt;div</span> <span class="attr2">class=</span><span class="str">"col-md-4"</span><span class="tag2">&gt;</span>
-   <span class="tag2">&lt;div</span> <span class="attr2">class=</span><span class="str">"card"</span><span class="tag2">&gt;</span>Starters<span class="tag2">&lt;/div&gt;</span>
-  <span class="tag2">&lt;/div&gt;</span>
-
-  <span class="tag2">&lt;div</span> <span class="attr2">class=</span><span class="str">"col-md-4"</span><span class="tag2">&gt;</span>
-   <span class="tag2">&lt;div</span> <span class="attr2">class=</span><span class="str">"card"</span><span class="tag2">&gt;</span>Mains<span class="tag2">&lt;/div&gt;</span>
-  <span class="tag2">&lt;/div&gt;</span>
-
-  <span class="tag2">&lt;div</span> <span class="attr2">class=</span><span class="str">"col-md-4"</span><span class="tag2">&gt;</span>
-   <span class="tag2">&lt;div</span> <span class="attr2">class=</span><span class="str">"card"</span><span class="tag2">&gt;</span>Desserts<span class="tag2">&lt;/div&gt;</span>
-  <span class="tag2">&lt;/div&gt;</span>
-
- <span class="tag2">&lt;/div&gt;</span>
-<span class="tag2">&lt;/div&gt;</span></pre>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-7 fade-up">
-        <p class="demo-intro">Live Bootstrap demo — navbar, responsive card grid, and components:</p>
-        <div class="bs-demo-wrap">
-          <div class="bs-nav-live">
-            <div class="bs-nav-brand">🍽️ The Good Plate</div>
-            <div class="bs-nav-links">
-              <a href="#" class="bs-nav-link">Menu</a>
-              <a href="#" class="bs-nav-link">About</a>
-              <a href="#" class="bs-nav-link">Contact</a>
-            </div>
-          </div>
-          <div class="bs-body-live">
-            <div class="bs-hero-live">
-              <h5>Welcome to The Good Plate</h5>
-              <p>Fresh food, made with care.</p>
-              <button class="btn btn-primary btn-sm me-2">View Menu</button>
-              <button class="btn btn-outline-secondary btn-sm">Contact Us</button>
-            </div>
-            <div class="bs-card-grid">
-              <div class="bs-card-live">
-                <div class="bs-card-emoji">🥗</div>
-                <h6>Starters</h6>
-                <p>Light bites to begin</p>
+        <div class="col-lg-7 fade-up">
+          <p class="demo-label">▼ Live demo — what the HTML above looks like in a browser with no CSS:</p>
+          <div class="mini-demo-box">
+            <div class="mini-demo-label">Browser Output — No CSS Applied</div>
+            <div class="mini-demo-content">
+              <h2 class="mini-h2">Dipesh Yadav</h2>
+              <p class="mini-p">CET138 student.</p>
+              <ul class="mini-ul">
+                <li>HTML &amp; CSS</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="mini-img-placeholder">photo.jpg</div>
+              <div class="mini-form">
+                <input type="text" placeholder="Name" class="mini-input">
+                <button class="mini-btn">Send</button>
               </div>
-              <div class="bs-card-live">
-                <div class="bs-card-emoji">🍔</div>
-                <h6>Mains</h6>
-                <p>Hearty main courses</p>
-              </div>
-              <div class="bs-card-live">
-                <div class="bs-card-emoji">🍰</div>
-                <h6>Desserts</h6>
-                <p>Sweet finishes</p>
-              </div>
-            </div>
-            <div class="bs-actions">
-              <span class="badge bg-success">Open Now</span>
-              <span class="badge bg-primary">Free Delivery</span>
-              <span class="badge bg-warning text-dark">⭐ 4.8</span>
+              <p class="mini-note">← Plain HTML, no styling. CSS transforms this into a designed page.</p>
             </div>
           </div>
-        </div>
-        <div class="feat-card feat-card-note feat-card-amber">
-          <p>This entire demo — navbar, hero, three cards, buttons, and badges — uses only Bootstrap class names. On a phone the three cards automatically stack into a single column without any extra CSS.</p>
+
+          <div class="card-custom mt-3">
+            <h5 class="accent-title">What this code shows</h5>
+            <ul class="info-list">
+              <li><strong>DOCTYPE & html</strong> — tells browser this is HTML5</li>
+              <li><strong>head</strong> — metadata the user doesn't see</li>
+              <li><strong>h1 & p</strong> — headings and paragraphs</li>
+              <li><strong>ul & li</strong> — unordered list with bullet items</li>
+              <li><strong>img with alt</strong> — image with accessibility text</li>
+              <li><strong>form & input</strong> — collects data from the user</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- SECTION 04 — JAVASCRIPT -->
-<section class="section" id="javascript">
-  <div class="container">
-    <div class="row g-5 align-items-start">
-      <div class="col-lg-6 fade-up">
-        <div class="section-eyebrow">Section 04 — Interactivity</div>
-        <h2 class="section-title">JavaScript – Bringing Pages to Life</h2>
-        <p class="section-desc">JavaScript is the only language that runs in the browser and makes pages respond to what the user does — updating content, validating forms, and communicating with servers.</p>
-        <div class="code-wrap">
-          <div class="code-header">
-            <div class="code-dots2"><span></span><span></span><span></span></div>
-            <span class="code-filename">app.js</span>
+  <!-- ===== SECTION 02 — CSS ===== -->
+  <section id="css">
+    <div class="container">
+      <div class="section-label">Section 02 — Styling</div>
+      <h2 class="section-title">CSS – Making Pages Look Good</h2>
+      <p class="section-sub mb-5">CSS (Cascading Style Sheets) controls how HTML elements look — colours, fonts, spacing, and layout. Without CSS every page would be plain black text on a white background.</p>
+
+      <div class="row g-4 mb-5">
+        <div class="col-md-4 fade-up">
+          <div class="card-custom">
+            <span class="card-icon">🔴</span>
+            <h5>Inline CSS</h5>
+            <p>Written directly inside an HTML tag. Quick but messy — hard to maintain.</p>
+            <div class="code-box">&lt;p style="color:red;"&gt;Text&lt;/p&gt;</div>
           </div>
-          <div class="code-body">
-<pre><span class="cm2">// HTML elements found by ID</span>
-<span class="kw">const</span> <span class="fn">correctBtn</span> = document.<span class="fn">getElementById</span>(<span class="str">"correct-btn"</span>);
-<span class="kw">const</span> <span class="fn">wrongBtn</span>   = document.<span class="fn">getElementById</span>(<span class="str">"wrong-btn"</span>);
-<span class="kw">const</span> <span class="fn">feedback</span>   = document.<span class="fn">getElementById</span>(<span class="str">"quiz-feedback"</span>);
+        </div>
+        <div class="col-md-4 fade-up">
+          <div class="card-custom">
+            <span class="card-icon">🟡</span>
+            <h5>Internal CSS</h5>
+            <p>Written in a &lt;style&gt; tag in the HTML head. Fine for small single-page projects.</p>
+            <div class="code-box">&lt;style&gt;
+  p { color: blue; }
+&lt;/style&gt;</div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-up">
+          <div class="card-custom card-highlight">
+            <span class="card-icon">🟢</span>
+            <h5>External CSS ✓</h5>
+            <p>A separate .css file linked via &lt;link&gt;. One stylesheet controls the whole site. Used in this portfolio.</p>
+            <div class="code-box">&lt;link rel="stylesheet"
+  href="CSS/index.css"&gt;</div>
+          </div>
+        </div>
+      </div>
 
-<span class="cm2">// Event listener — waits for a click</span>
-correctBtn.<span class="fn">addEventListener</span>(<span class="str">"click"</span>, <span class="kw">function</span>() {
-  feedback.textContent = <span class="str">"✓ Correct! Well done."</span>;
-  feedback.className = <span class="str">"quiz-feedback-box correct-fb show"</span>;
-  correctBtn.<span class="fn">classList</span>.<span class="fn">add</span>(<span class="str">"correct"</span>);
-});
-
-wrongBtn.<span class="fn">addEventListener</span>(<span class="str">"click"</span>, <span class="kw">function</span>() {
-  feedback.textContent = <span class="str">"✗ Not quite. Try again!"</span>;
-  feedback.className = <span class="str">"quiz-feedback-box wrong-fb show"</span>;
-  wrongBtn.<span class="fn">classList</span>.<span class="fn">add</span>(<span class="str">"wrong"</span>);
-});
-
-<span class="cm2">// Reusable function</span>
-<span class="kw">function</span> <span class="fn">greetUser</span>(name) {
-  <span class="kw">return</span> <span class="str">"Hello, "</span> + name + <span class="str">"!"</span>;
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-5 fade-up">
+          <div class="code-label">CSS/index.css — key rules from this site</div>
+          <div class="code-box">/* CSS Variables */
+:root {
+  --primary: #16a34a;
+  --dark:    #0f172a;
+  --accent:  #4ade80;
+  --text:    #e2e8f0;
 }
-console.<span class="fn">log</span>(<span class="fn">greetUser</span>(<span class="str">"Dipesh"</span>));
-<span class="cm2">// → Hello, Dipesh!</span></pre>
-          </div>
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Arial;
+  background: var(--dark);
+  color: var(--text);
+}
+
+/* Box model */
+.card-custom {
+  background: #1e293b;
+  border-radius: 10px;
+  padding: 24px;
+  border: 1px solid #334155;
+}
+
+/* Flexbox layout */
+.css-demo-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Hover effect */
+.card-custom:hover {
+  border-color: var(--primary);
+  transform: translateY(-4px);
+}</div>
         </div>
-      </div>
-      <div class="col-lg-6 fade-up">
-        <p class="demo-intro">Live JavaScript demo — click an answer to see DOM manipulation in action:</p>
-        <div class="quiz-wrap">
-          <div class="quiz-header">
-            <h5>🧠 Quick Quiz</h5>
-          </div>
-          <div class="quiz-body">
-            <div class="quiz-q-text" id="quiz-q-text">Q1 — What does HTML stand for?</div>
-            <div class="quiz-opts">
-              <button class="quiz-opt" id="correct-btn"><span class="quiz-opt-letter">A</span>HyperText Markup Language</button>
-              <button class="quiz-opt" id="wrong-btn"><span class="quiz-opt-letter">B</span>High Transfer Markup Language</button>
+
+        <div class="col-lg-7 fade-up">
+          <p class="demo-label">▼ Live demo — the CSS above produces this:</p>
+          <div class="css-demo-box">
+            <div class="css-demo-profile">
+              <div class="css-demo-avatar">👤</div>
+              <div>
+                <div class="css-demo-name">Dipesh Yadav</div>
+                <div class="css-demo-role">Full Stack Development Student</div>
+              </div>
             </div>
-            <div class="quiz-feedback-box" id="quiz-feedback"></div>
-            <button class="quiz-next-btn" id="quiz-reset-btn" onclick="resetQuiz()">↩ Try Again</button>
+            <ul class="css-skill-list">
+              <li>HTML</li><li>CSS</li><li>Bootstrap</li><li>JavaScript</li>
+            </ul>
+            <a class="css-demo-btn" href="../index.html#contact">📧 Contact Me</a>
+          </div>
+
+          <div class="card-custom mt-3">
+            <h5 class="accent-title mb-3">The Box Model — Every Element is a Box</h5>
+            <div class="row g-2">
+              <div class="col-6 col-md-3">
+                <div class="box-model-cell box-margin">
+                  <div class="box-model-title">Margin</div>
+                  <div class="box-model-sub">Space outside</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="box-model-cell box-border">
+                  <div class="box-model-title">Border</div>
+                  <div class="box-model-sub">Visible edge</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="box-model-cell box-padding">
+                  <div class="box-model-title">Padding</div>
+                  <div class="box-model-sub">Space inside</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="box-model-cell box-content">
+                  <div class="box-model-title">Content</div>
+                  <div class="box-model-sub">Actual text/image</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="feat-card feat-card-note feat-card-green">
-          <p>This quiz uses <strong>variables</strong> to store questions, <strong>event listeners</strong> to detect answers, and <strong>DOM manipulation</strong> to update what you see — all without any page reload.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 03 — BOOTSTRAP ===== -->
+  <section id="bootstrap">
+    <div class="container">
+      <div class="section-label">Section 03 — Framework</div>
+      <h2 class="section-title">Bootstrap – Build Faster</h2>
+      <p class="section-sub mb-5">Bootstrap is a free CSS framework that provides a 12-column responsive grid and ready-made components — navbar, cards, buttons — added with one CDN link.</p>
+
+      <div class="row g-4 mb-4">
+        <div class="col-lg-5 fade-up">
+          <div class="code-label">index.html — Bootstrap CDN setup</div>
+          <div class="code-box">&lt;!-- Add to &lt;head&gt; --&gt;
+&lt;link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/
+  bootstrap@5.3.0/dist/css/
+  bootstrap.min.css"&gt;
+
+&lt;!-- Add before &lt;/body&gt; --&gt;
+&lt;script src="https://cdn.jsdelivr.net/
+  npm/bootstrap@5.3.0/dist/js/
+  bootstrap.bundle.min.js"&gt;
+&lt;/script&gt;
+
+&lt;!-- Responsive 3-column grid --&gt;
+&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-md-4"&gt;Card 1&lt;/div&gt;
+    &lt;div class="col-md-4"&gt;Card 2&lt;/div&gt;
+    &lt;div class="col-md-4"&gt;Card 3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</div>
+        </div>
+        <div class="col-lg-7 fade-up">
+          <div class="card-custom">
+            <h5 class="accent-title">Why Bootstrap saves time</h5>
+            <p>A responsive navbar from scratch takes an hour — CSS for desktop, media queries for mobile, JS for the hamburger. Bootstrap does all this with 10 lines of HTML and the right class names. No extra code needed.</p>
+
+            <h5 class="accent-title mb-3 mt-4">Bootstrap Grid — 12 columns</h5>
+            <div class="row g-2 mb-2">
+              <div class="col-6"><div class="grid-cell grid-green">col-6</div></div>
+              <div class="col-6"><div class="grid-cell grid-green">col-6</div></div>
+            </div>
+            <div class="row g-2 mb-2">
+              <div class="col-4"><div class="grid-cell grid-blue">col-4</div></div>
+              <div class="col-4"><div class="grid-cell grid-blue">col-4</div></div>
+              <div class="col-4"><div class="grid-cell grid-blue">col-4</div></div>
+            </div>
+            <div class="row g-2">
+              <div class="col-8"><div class="grid-cell grid-purple">col-8</div></div>
+              <div class="col-4"><div class="grid-cell grid-purple">col-4</div></div>
+            </div>
+            <p class="grid-note">Numbers add up to 12 per row. On mobile, columns automatically stack.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="demo-label">▼ Live demo — full restaurant page using only Bootstrap class names, zero custom CSS:</p>
+      <div class="bs-demo-wrapper">
+        <nav class="navbar navbar-dark bg-dark px-3">
+          <span class="navbar-brand">🍽️ The Good Plate</span>
+          <div class="d-none d-md-flex gap-3">
+            <a href="#" class="nav-link text-white-50">Menu</a>
+            <a href="#" class="nav-link text-white-50">About</a>
+          </div>
+        </nav>
+        <div class="bg-dark text-center py-3 px-3">
+          <h5 class="text-white mb-1">Welcome to The Good Plate</h5>
+          <p class="text-secondary mb-2">Fresh food, made with care.</p>
+          <a href="#" class="btn btn-primary btn-sm">View Menu</a>
+        </div>
+        <div class="container py-3">
+          <div class="row g-2">
+            <div class="col-md-4"><div class="card bg-dark text-white border-secondary"><div class="card-body py-2"><h6 class="card-title mb-1">🥗 Starters</h6><p class="card-text text-secondary small mb-0">Light bites to begin</p></div></div></div>
+            <div class="col-md-4"><div class="card bg-dark text-white border-secondary"><div class="card-body py-2"><h6 class="card-title mb-1">🍔 Mains</h6><p class="card-text text-secondary small mb-0">Hearty main courses</p></div></div></div>
+            <div class="col-md-4"><div class="card bg-dark text-white border-secondary"><div class="card-body py-2"><h6 class="card-title mb-1">🍰 Desserts</h6><p class="card-text text-secondary small mb-0">Sweet finishes</p></div></div></div>
+          </div>
+          <p class="text-muted small mt-2 text-center mb-1">Navbar + hero + 3 cards — only Bootstrap class names used, no custom CSS written.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="row align-items-start g-4">
-      <div class="col-md-6">
-        <div class="footer-brand">Dipesh Yadav — CET138 ePortfolio</div>
-        <div class="footer-sub">Full Stack Development — Assignment 1</div>
-        <div class="footer-pills">
-          <span class="footer-pill">HTML5</span>
-          <span class="footer-pill">Bootstrap 5</span>
-          <span class="footer-pill">JavaScript</span>
-          <span class="footer-pill">Full Stack</span>
+  <!-- ===== SECTION 04 — JAVASCRIPT ===== -->
+  <section id="javascript">
+    <div class="container">
+      <div class="section-label">Section 04 — Interactivity</div>
+      <h2 class="section-title">JavaScript – Bringing Pages to Life</h2>
+      <p class="section-sub mb-5">JavaScript makes pages respond to the user — updating content, validating forms, and manipulating the DOM without any page reload.</p>
+
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-5 fade-up">
+          <div class="code-label">JS/scripts.js</div>
+          <div class="code-box">// Find elements by ID
+const correctBtn =
+  document.getElementById("correct-btn");
+const wrongBtn =
+  document.getElementById("wrong-btn");
+const feedback =
+  document.getElementById("quiz-feedback");
+
+// Lock buttons after answer
+function lockButtons() {
+  [correctBtn, wrongBtn].forEach(
+    b => b.style.pointerEvents = "none"
+  );
+  resetBtn.style.display = "inline-block";
+}
+
+// Correct answer clicked
+correctBtn.addEventListener("click",
+  function() {
+    feedback.textContent = "✓ Correct!";
+    feedback.className =
+      "quiz-feedback-box correct-fb show";
+    correctBtn.classList.add("correct");
+    lockButtons();
+  }
+);
+
+// Wrong answer clicked
+wrongBtn.addEventListener("click",
+  function() {
+    feedback.textContent = "✗ Try again!";
+    feedback.className =
+      "quiz-feedback-box wrong-fb show";
+    wrongBtn.classList.add("wrong");
+    lockButtons();
+  }
+);</div>
+        </div>
+
+        <div class="col-lg-7 fade-up">
+          <p class="demo-label">▼ Live demo — click an answer to see DOM manipulation:</p>
+          <div class="quiz-box mb-3">
+            <h5>🧠 Quick Quiz</h5>
+            <p>Q1 — What does HTML stand for?</p>
+            <button class="quiz-btn" id="correct-btn">A &nbsp; HyperText Markup Language</button>
+            <button class="quiz-btn" id="wrong-btn">B &nbsp; High Transfer Markup Language</button>
+            <div class="quiz-feedback-box" id="quiz-feedback"></div>
+            <button class="btn-outline" id="quiz-reset-btn">↩ Try Again</button>
+          </div>
+
+          <p class="demo-label">▼ Mini demo — DOM manipulation: click the button to change the box:</p>
+          <div class="card-custom text-center">
+            <div id="colour-box" class="colour-box">Click the button!</div>
+            <button class="btn-green" onclick="changeColour()">Change Colour</button>
+            <p class="colour-note">JavaScript changes the background colour using <code>style.background</code> — DOM manipulation in action.</p>
+          </div>
+
+          <div class="card-custom mt-3">
+            <h5 class="accent-title mb-3">Three JS concepts demonstrated</h5>
+            <ul class="info-list">
+              <li><strong>Variables</strong> — store references to HTML elements</li>
+              <li><strong>Event listeners</strong> — detect when user clicks</li>
+              <li><strong>DOM manipulation</strong> — update text and style instantly</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <p class="footer-demonstrates"><strong>What is demonstrated:</strong></p>
-        <p class="footer-check">✓ HTML structure and semantic elements</p>
-        <p class="footer-check">✓ Bootstrap grid and responsive components</p>
-        <p class="footer-check">✓ JavaScript DOM manipulation and events</p>
-        <p class="footer-check">✓ Full stack architecture and data flow</p>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 05 — FULL STACK ===== -->
+  <section id="fullstack">
+    <div class="container">
+      <div class="section-label">Section 05 — Architecture</div>
+      <h2 class="section-title">Full Stack – How It All Connects</h2>
+      <p class="section-sub mb-5">Full stack development covers every layer of a web app — the frontend users see, the backend server logic, and the database that stores data permanently.</p>
+
+      <div class="row g-4 mb-4">
+        <div class="col-md-4 fade-up">
+          <div class="card-custom text-center">
+            <span class="card-icon">🖥️</span>
+            <h5>Frontend</h5>
+            <p>What users see. Built with HTML, CSS, JavaScript and Bootstrap. Runs in the browser.</p>
+          </div>
+        </div>
+        <div class="col-md-4 fade-up">
+          <div class="card-custom text-center">
+            <span class="card-icon">⚙️</span>
+            <h5>Backend</h5>
+            <p>Server-side logic. Handles requests, authentication, and business rules using Node.js or Python.</p>
+          </div>
+        </div>
+        <div class="col-md-4 fade-up">
+          <div class="card-custom text-center">
+            <span class="card-icon">🗄️</span>
+            <h5>Database</h5>
+            <p>Stores all data permanently. MySQL for structured, MongoDB for flexible document storage.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="demo-label">▼ Live demo — click "Place Order" to trace a request through every layer of the full stack:</p>
+      <div class="card-custom mb-4">
+        <div class="row g-3 align-items-center mb-3">
+          <div class="col-auto">
+            <button class="btn-green" onclick="runFullStack()">🛒 Place Order</button>
+          </div>
+          <div class="col">
+            <span id="fs-status" class="fs-status-text">Click to simulate a food order going through the full stack...</span>
+          </div>
+        </div>
+        <div class="row g-2">
+          <div class="col-md fs-step" id="fs-1"><div class="fs-step-inner"><div class="fs-icon">🖱️</div><div class="fs-title">1. Browser</div><div class="fs-sub">User clicks button</div></div></div>
+          <div class="col-md fs-step" id="fs-2"><div class="fs-step-inner"><div class="fs-icon">📦</div><div class="fs-title">2. JavaScript</div><div class="fs-sub">Packages as JSON</div></div></div>
+          <div class="col-md fs-step" id="fs-3"><div class="fs-step-inner"><div class="fs-icon">🌐</div><div class="fs-title">3. HTTP Request</div><div class="fs-sub">Sent to server</div></div></div>
+          <div class="col-md fs-step" id="fs-4"><div class="fs-step-inner"><div class="fs-icon">⚙️</div><div class="fs-title">4. Backend</div><div class="fs-sub">Validates & processes</div></div></div>
+          <div class="col-md fs-step" id="fs-5"><div class="fs-step-inner"><div class="fs-icon">🗄️</div><div class="fs-title">5. Database</div><div class="fs-sub">Order saved</div></div></div>
+          <div class="col-md fs-step" id="fs-6"><div class="fs-step-inner"><div class="fs-icon">✅</div><div class="fs-title">6. Confirmed</div><div class="fs-sub">Page updates</div></div></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="step-card fade-up">
+            <div class="step-num">1</div>
+            <div><h6>Customer taps "Place Order"</h6><p>JavaScript captures the click event in the browser — no page reload</p></div>
+          </div>
+          <div class="step-card fade-up">
+            <div class="step-num">2</div>
+            <div><h6>Frontend sends the request</h6><p>Cart data is packaged as JSON and sent via HTTP POST to the backend API</p></div>
+          </div>
+          <div class="step-card fade-up">
+            <div class="step-num">3</div>
+            <div><h6>Backend processes everything</h6><p>Validates input, checks authentication, processes payment via Stripe</p></div>
+          </div>
+          <div class="step-card fade-up">
+            <div class="step-num">4</div>
+            <div><h6>Database saves the order</h6><p>New order record written with ID, items, price, address, and status: Pending</p></div>
+          </div>
+          <div class="step-card step-card-accent fade-up">
+            <div class="step-num step-num-accent">✓</div>
+            <div><h6>Confirmation shown to customer</h6><p>Success response returned — frontend updates the page instantly. Under 2 seconds total.</p></div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer-copy">Built for CET138 Module Assessment · All examples are original working code</div>
-  </div>
-</footer>
+  </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../JS/scripts.js"></script>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-name">Dipesh Yadav</div>
+      <p>CET138 Full Stack Development — Assignment 1</p>
+      <div class="mt-3">
+        <span class="tag-pill">HTML5</span>
+        <span class="tag-pill">CSS3</span>
+        <span class="tag-pill">Bootstrap 5</span>
+        <span class="tag-pill">JavaScript</span>
+        <span class="tag-pill">Full Stack</span>
+      </div>
+      <p class="mt-3 small">✓ HTML &nbsp;|&nbsp; ✓ CSS &nbsp;|&nbsp; ✓ Bootstrap &nbsp;|&nbsp; ✓ JavaScript &nbsp;|&nbsp; ✓ Full Stack</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../JS/scripts.js"></script>
 </body>
 </html>
