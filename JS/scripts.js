@@ -1,7 +1,4 @@
-// ============================================
-// CET138 Portfolio — scripts.js
-// Student: Dipesh Yadav | Reg: 250939312
-// ============================================
+
 
 // — QUIZ (Portfolio page only) —
 const correctBtn = document.getElementById("correct-btn");
